@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function ButtonCrm({ children, onClick, icon, rtl, ...rest }) {
+export default function Button({ children, onClick, icon, rtl, ...rest }) {
   const Icon = icon;
   return (
     <Container {...rest} icon={icon} rtl={rtl} onClick={onClick}>
@@ -14,14 +14,14 @@ export default function ButtonCrm({ children, onClick, icon, rtl, ...rest }) {
   );
 }
 
-ButtonCrm.propTypes = {
+Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   onClick: PropTypes.func,
   icon: PropTypes.func,
   rtl: PropTypes.bool,
 };
 
-ButtonCrm.defaultProps = {
+Button.defaultProps = {
   children: '',
   onClick: () => {},
   icon: null,

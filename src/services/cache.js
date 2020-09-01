@@ -1,13 +1,4 @@
-const URL_CACHED = [
-  /filtro/,
-  /usuarios/,
-  /crm\/kanban\/listarcolunaskanban/,
-  /crm\/loja\/\d+\/canais/,
-  /crm\/negociacoes\/motivos\/\d+/,
-  /crm\/detalhepagamento\/instituicoes/,
-  /usuario\/estados/,
-  /crm\/uploads\/regras/,
-];
+const URL_CACHED = [/filtro/];
 
 export function getURLCached(req) {
   const { url } = req;

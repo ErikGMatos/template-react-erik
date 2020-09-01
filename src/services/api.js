@@ -12,7 +12,7 @@ import { enviroment } from './enviroment';
 localforage.defineDriver(memoryDriver);
 const localforageStore = localforage.createInstance({
   driver: [localforage.LOCALSTORAGE, localforage.INDEXEDDB],
-  name: 'CRM_CACHE_REQUESTS',
+  name: 'CACHE_REQUESTS',
 });
 
 export const API_URL = enviroment(process.env.APP_ENV);
@@ -50,9 +50,7 @@ api.interceptors.request.use(async config => {
   try {
     isLoading((reqs += 1));
     if (
-      !commom.CONFIG_CRM_URLS_WITHOUT_AUTHORIZATION_BEARER.includes(
-        config.baseURL
-      )
+      !commom.CONFIG_URLS_WITHOUT_AUTHORIZATION_BEARER.includes(config.baseURL)
     ) {
       const token = getCookie('CockpitLogged');
       if (token) {

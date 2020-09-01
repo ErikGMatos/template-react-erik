@@ -10,7 +10,7 @@ const common = require('./webpack.common');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    publicPath: '/crm/',
+    publicPath: '/meuapp/',
     path: path.resolve(__dirname, '..', 'dist', 'source'),
     filename: 'static/js/[name].[contentHash].bundle.js',
     chunkFilename: 'static/js/[name].[contentHash].bundle.js',

@@ -6,7 +6,7 @@ import SetTransform from './SetTransform';
 export default reducers => {
   const persistedreducer = persistReducer(
     {
-      key: 'CRM_STORAGE',
+      key: 'MY_APP_STORAGE',
       storage,
       whitelist: [], // se quiser persistir adiciona o nome do reducer aqui
       transforms: [SetTransform],

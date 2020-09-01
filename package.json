@@ -1,5 +1,5 @@
 {
-  "name": "webmotors.cockpit.crm.ui",
+  "name": "react",
   "version": "1.0.0",
   "husky": {
     "hooks": {
@@ -16,7 +16,7 @@
       "git add"
     ]
   },
-  "description": "Cockpit CRM UI",
+  "description": "react",
   "main": "index.js",
   "scripts": {
     "start": "node scripts/dev",

@@ -57,7 +57,7 @@ export const Overlay = styled.div`
     `}
 `;
 
-export const ModalCrm = styled.div`
+export const Modal = styled.div`
   position: relative;
   top: 0;
   z-index: 9999;

@@ -14,8 +14,8 @@ export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Dashboard} />
-      <Route path={commom.CONFIG_CRM_NOT_FOUND_PAGE} component={NotFound} />
-      <Redirect path="*" to={commom.CONFIG_CRM_NOT_FOUND_PAGE} />
+      <Route path={commom.CONFIG_NOT_FOUND_PAGE} component={NotFound} />
+      <Redirect path="*" to={commom.CONFIG_NOT_FOUND_PAGE} />
     </Switch>
   );
 }

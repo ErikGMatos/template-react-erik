@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import usePortal from '~/components/Portal';
 
 import {
-  ModalCrm,
+  Modal,
   Overlay,
   ButtonClose,
   ModalWrap,
@@ -15,7 +15,7 @@ import {
   Title,
 } from './styles';
 
-export default function Modal({
+export default function ModalM({
   id,
   children,
   handleClose,
@@ -87,7 +87,7 @@ export default function Modal({
             animation={animation}
             onClick={closeOverlay ? closeModal : null}
           />
-          <ModalCrm
+          <Modal
             isOpen={isOpenModal}
             animation={animation}
             maxHeight={maxHeight}
@@ -105,7 +105,7 @@ export default function Modal({
               </Header>
             ) : null}
             {shouldRender && children}
-          </ModalCrm>
+          </Modal>
         </ModalWrap>
       </ModalWrapDad>
     </>,
@@ -113,7 +113,7 @@ export default function Modal({
   );
 }
 
-Modal.propTypes = {
+ModalM.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   handleClose: PropTypes.func,
   closeOverlay: PropTypes.bool,
@@ -129,7 +129,7 @@ Modal.propTypes = {
   setCloseCallbackType: PropTypes.func,
 };
 
-Modal.defaultProps = {
+ModalM.defaultProps = {
   children: null,
   handleClose: () => {},
   closeOverlay: true,

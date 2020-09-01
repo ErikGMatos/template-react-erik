@@ -13,8 +13,6 @@ module.exports = merge(common, {
   },
   devServer: {
     compress: true,
-    // host: 'local.webmotors.com.br',
-    // host: `local.hml.cockpit.com.${process.env.translate.slice(3)}`,
     port: 8080,
     historyApiFallback: true,
     disableHostCheck: true,

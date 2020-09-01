@@ -1,5 +1,3 @@
-## Cockpit CRM
-
 #### Requisitos:
 - [NodeJS](https://nodejs.org/en/) <img src="https://www.taniarascia.com/static/517c02bd875932e2a959488763695b28/4148e/node.png" width=19/>
 - [Yarn](https://yarnpkg.com/lang/en/) <img src="https://tfrommen.de/wp-content/uploads/yarn-logo-400x400-1478627696.jpg" width=19/>
@@ -30,4 +28,3 @@ tipos aceitos : ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'revert']
 mensagem deve ser em sentense-case: "Começando com letra maíscula...."
 todos os testes dos arquivos `alterados` serão executados antes do commit, caso falhe o commit será abortado.
 ```
- 
