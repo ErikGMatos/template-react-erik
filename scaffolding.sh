@@ -34,7 +34,7 @@ export default function Dashboard() {
 }
 EOM
 > src/pages/Dashboard/index.js
-echo "$packageText" >> src/pages/Dashboard/index.js
+echo "$dashboardText" >> src/pages/Dashboard/index.js
 
 echo -e → Criando package.json...
 read -r -d '' packageText << EOM
