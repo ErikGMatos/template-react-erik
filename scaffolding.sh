@@ -17,7 +17,7 @@
  mkdir -p $PROJECT
 
 echo -e → Criando pastas...
-git clone https://github.com/ErikGMatos/template.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT && yarn
+git clone https://github.com/ErikGMatos/template-react-erik.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT && yarn
 
 NOW=$(date +"%d-%m-%Y")
 
