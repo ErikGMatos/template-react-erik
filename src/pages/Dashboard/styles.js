@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  transform: translate(-50%, -50%);
 
-  h1 {
+  p {
     font-size: 3rem;
   }
 `;

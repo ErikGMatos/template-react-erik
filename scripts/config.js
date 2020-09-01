@@ -8,16 +8,6 @@ const infoCountry = {
     alpha2Code: 'BR',
     country: 'Brazil',
   },
-  'es-co': {
-    lang: 'es',
-    alpha2Code: 'CO',
-    country: 'Colombia',
-  },
-  'es-ar': {
-    lang: 'es',
-    alpha2Code: 'AR',
-    country: 'Argentina',
-  },
 };
 
 const existingCountries = Object.entries(infoCountry).map(([item]) => item);
