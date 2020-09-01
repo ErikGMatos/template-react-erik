@@ -16,6 +16,9 @@
  read PROJECT
  mkdir -p $PROJECT
 
+ echo -e → Criando pastas...
+ git clone https://github.com/ErikGMatos/template.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT && yarn
+
 read -r -d '' dashboardText << EOM
 import React from 'react';
 
@@ -32,9 +35,6 @@ export default function Dashboard() {
 EOM
 > src/pages/Dashboard/index.js
 echo "$packageText" >> src/pages/Dashboard/index.js
-
- echo -e → Criando pastas...
- git clone https://github.com/ErikGMatos/template.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT
 
 echo -e → Criando package.json...
 read -r -d '' packageText << EOM
@@ -157,7 +157,7 @@ read -r -d '' packageText << EOM
 EOM
 > package.json
 echo "$packageText" >> package.json
-cd $PROJECT && yarn
+
 echo -e "✔ Processo finalizado! Projeto $PROJECT foi criado"
 echo -e "✔ Projeto $PROJECT foi criado"
 echo -e "✔ Rode o comando abaixo"
