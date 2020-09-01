@@ -16,8 +16,10 @@
  read PROJECT
  mkdir -p $PROJECT
 
- echo -e → Criando pastas...
- git clone https://github.com/ErikGMatos/template.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT && yarn
+echo -e → Criando pastas...
+git clone https://github.com/ErikGMatos/template.git templatetemp &&  cp -r ./templatetemp/. ./$PROJECT  && rm -rf ./templatetemp && cd $PROJECT && yarn
+
+NOW=$(date +"%d-%m-%Y")
 
 read -r -d '' dashboardText << EOM
 import React from 'react';
@@ -27,6 +29,7 @@ import { Container } from './styles';
 export default function Dashboard() {
   return (
     <Container>
+      <p>$NOW</p>
       <p>Seja bem vindo $USER</p>
       <p>este é o template de app ReactJS.By @Erik Matos</p>
     </Container>
