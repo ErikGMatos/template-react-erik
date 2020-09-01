@@ -1,0 +1,25 @@
+{
+  // /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "name": "Attach to url",
+      //"url": "http://local.webmotors.com.br:8080*",
+      "url": "http://local.hml.cockpit.com.br:8080*",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        // "webpack:///./~/*": "${webRoot}/node_modules/*",       // Example: "webpack:///./~/querystring/index.js" -> "/Users/me/project/node_modules/querystring/index.js"
+        "webpack:///./*":   "${webRoot}/*",                    // Example: "webpack:///./src/app.js" -> "/Users/me/project/src/app.js",
+        // "webpack:///*":     "*",                               // Example: "webpack:///project/app.ts" -> "/project/app.ts"
+        // "webpack:///src/*": "${webRoot}/*",                    // Example: "webpack:///src/app.js" -> "/Users/me/project/app.js"
+        // "meteor://💻app/*": "${webRoot}/*"                    // Example: "meteor://💻app/main.ts" -> "/Users/me/project/main.ts"
+    },
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+      ]
+    }
+  ]
+}
