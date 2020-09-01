@@ -7,8 +7,7 @@
       "request": "attach",
       "port": 9222,
       "name": "Attach to url",
-      //"url": "http://local.webmotors.com.br:8080*",
-      "url": "http://local.hml.cockpit.com.br:8080*",
+      //"url": "http://localhost:8080*",
       "webRoot": "${workspaceFolder}",
       "sourceMapPathOverrides": {
         // "webpack:///./~/*": "${webRoot}/node_modules/*",       // Example: "webpack:///./~/querystring/index.js" -> "/Users/me/project/node_modules/querystring/index.js"
