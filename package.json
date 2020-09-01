@@ -23,7 +23,6 @@
   "scripts": {
     "start": "node scripts/dev",
     "hml": "node  scripts/hml",
-    "azl": "node  scripts/azl",
     "prd": "node  scripts/prd",
     "publish": "node  scripts/publish",
     "build": "webpack -p --mode production --config webpack/webpack.prod.js",
