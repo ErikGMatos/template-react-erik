@@ -7,7 +7,7 @@ export default function Dashboard() {
     <Container>
        <p>##NOW##</p>
        <p>
-         Seja bem vindo <strong>##USERNAME##</strong>
+         Seja bem vindo <strong>##USERNAME##</strong>,
        </p>
        <p>este é o template de app ReactJS.By @Erik Matos</p>
      </Container>
