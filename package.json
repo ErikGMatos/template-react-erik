@@ -1,9 +1,9 @@
 {
-  "name": "react",
+  "name": "nameproject",
   "version": "1.0.0",
   "description": "react",
   "main": "index.js",
-  "author": "Erik Matos",
+  "author": "##USERNAME## by template Erik Matos",
   "license": "ISC",
   "husky": {
     "hooks": {
