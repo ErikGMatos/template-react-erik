@@ -38,7 +38,12 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 export default function Routes() {
   return (
     <Switch>
-      <PrivateRoute exact path="/" component={Dashboard} />
+      <Route exact path="/" component={Dashboard} />
+      <PrivateRoute
+        exact
+        path="/rota-privada"
+        component={() => <p>Componente privado</p>}
+      />
       <Route
         exact
         path={commom.CONFIG_CRM_ACCESS_DENIED_PAGE}
