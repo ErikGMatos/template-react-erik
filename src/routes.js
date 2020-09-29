@@ -39,6 +39,7 @@ export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Dashboard} />
+
       <PrivateRoute
         exact
         path="/rota-privada"
