@@ -14,7 +14,7 @@ export default createGlobalStyle`
 
 html{font-size: 10px;}
 
-body{overflow-x: hidden;overflow-y: scroll;min-width: 1024px;min-height: 100vh;background-color: #ecedf2;color: #8b8c99;font-family: 'Poppins', sans-serif;-webkit-font-smoothing: antialiased !important;}
+body{overflow-x: hidden;min-width: 1024px;min-height: 100vh;background-color: #ecedf2;color: #8b8c99;font-family: 'Poppins', sans-serif;-webkit-font-smoothing: antialiased !important;}
 
 h1, h2, h3, h4, h5, h6, th{font-weight: inherit;font-size: inherit;}
 

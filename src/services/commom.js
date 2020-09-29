@@ -3,6 +3,7 @@ const commom = {
 
   CONFIG_DASHBOARD: '/dashboard',
   CONFIG_NOT_FOUND_PAGE: '/not-found-404',
+  CONFIG_CRM_ACCESS_DENIED_PAGE: '/access-denied',
 };
 
 export default commom;
